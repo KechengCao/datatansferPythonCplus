@@ -22,6 +22,7 @@ class Operation_Db:
         # url的前缀要配置
         self._api_addr_pricematrix = "http://192.168.3.228:30035/service/proposal/operation/queryMatrixPrice"
         self._api_addr_load = "http://192.168.3.241:30035/service/project/load/getByProjectId"
+        self._api_addr_dpresult = ""
         # self._api_addr = (
         #         "http://" + api_addr
         # )  # "http://192.168.1.247:30023/facade/device/data/v2/getDeviceData"

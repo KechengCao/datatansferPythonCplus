@@ -17,7 +17,7 @@ def calc_operation(calc_params: dict) -> dict:
 
 def __calc_operation(operation):
     algorithm_mapping = {
-        "ARBI":"Arbicharge"
+        "ARBI":"Arbitrage"
     }
 
     try:
