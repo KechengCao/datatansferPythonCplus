@@ -1,0 +1,6 @@
+{
+    "clickhouse_host": "http://192.168.3.225:8123",
+    "clickhouse_database_name": "chelion",
+    "user": "chelion",
+    "password": "chelion8888"
+}
