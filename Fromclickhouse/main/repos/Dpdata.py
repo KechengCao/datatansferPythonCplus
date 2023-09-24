@@ -60,7 +60,7 @@ class Operation_Db:
         result = res.json()
 
         load = []
-        closest_date = datetime.datetime.strptime(result["data"][0]["timestamp"], "%Y-%m-%d %H:%M:%S")
+        closest_date = datetime.datetime.strptime(result["data"][0]["date"], "%Y-%m-%d %H:%M:%S")
 
         for data in result["data"]:
             load.append(data["load"])

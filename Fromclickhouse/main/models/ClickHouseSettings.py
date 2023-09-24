@@ -12,7 +12,7 @@ class ClickHouseSettings(object):
                 self._entity = configs_dict
         except:
             try:
-                with open('app/main/clickhouse_settings.json', 'r', encoding='utf8') as fp:
+                with open('Fromclickhouse/main/clickhouse_settings.json', 'r', encoding='utf8') as fp:
                     configs_dict = json.load(fp)
                     self._entity = configs_dict
             except:

@@ -5,14 +5,15 @@ def calc_operation(calc_params: dict) -> dict:
     operation = __params_factory(calc_params)
     result = __calc_operation(operation=operation)
 
-    return {
-        "code": 200, "msg": "Calculation Finished!", "data": [{
-            "time": "2025-09-10 00:00:00",#round(result, 6)
-            "price":1,
-            "pv":10,
-            "load":100
-        }]
-    }
+    return {"code": 200, "msg": "Calculation Finished!", "data":result}
+    #return {
+     #   "code": 200, "msg": "Calculation Finished!", "data": [{
+      #      "time": "2025-09-10 00:00:00",#round(result, 6)
+       #     "price":1,
+        #    "pv":10,
+         #   "load":100
+        #}]
+    #}
 
 
 def __calc_operation(operation):
@@ -36,7 +37,7 @@ def __params_factory(calc_params):
     operation = Operation()
 
     if calc_params.__contains__("projectId"):
-        operation.proposalId = calc_params["projectId"]
+        operation.projectId = calc_params["projectId"]
 
     if calc_params.__contains__("generationTaskId"):
         operation.generationTaskId = calc_params["generationTaskId"]
